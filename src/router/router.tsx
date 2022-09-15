@@ -1,8 +1,15 @@
+import { ReactNode } from 'react';
 import { MainPage } from '../pages';
+import { EnumRoutes } from './EnumRoutes';
 
-export const routes = [
+interface IRoute {
+  path: string;
+  element: ReactNode;
+}
+
+export const routes: IRoute[] = [
   {
-    path: '/',
+    path: EnumRoutes.MAIN_ROUTE,
     element: <MainPage />,
   },
 ];
