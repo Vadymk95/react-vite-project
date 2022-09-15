@@ -1,10 +1,11 @@
 import { FC } from 'react';
+import { Sidebar } from './components';
 import { AppRouter } from './router';
 
 export const App: FC = () => {
   return (
-    <div className="app">
-      <h1>Hello World</h1>
+    <div className="w-full overflow-hidden">
+      <Sidebar />
       <AppRouter />
     </div>
   );
