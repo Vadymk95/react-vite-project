@@ -1,3 +1,4 @@
 export enum EnumRoutes {
-  MAIN_ROUTE = '/',
+  MAIN_ROUTE = '/home',
+  LIST_ROUTE = '/list',
 }

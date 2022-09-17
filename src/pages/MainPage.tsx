@@ -1,5 +1,16 @@
 import { FC } from 'react';
 
 export const MainPage: FC = () => {
-  return <div>MainPage</div>;
+  return (
+    <div>
+      <h1 className="text-[36px] font-bold">Home Page</h1>
+      <div className="mt-8 text-[20px]">
+        <p>
+          This project for my needs and here you can find solutions of different
+          cases which can help you.
+        </p>
+        <p>You can login or use only basic routes</p>
+      </div>
+    </div>
+  );
 };
