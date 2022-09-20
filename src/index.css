@@ -7,5 +7,9 @@
 }
 
 .title {
-  @apply text-[32px] font-bold mb-8;
+  @apply text-[36px] font-bold mb-8;
+}
+
+.redirect-link {
+  @apply underline text-sky-400 hover:text-primary;
 }

@@ -1,0 +1,3 @@
+.input {
+  @apply rounded-xl outline-none w-full border px-4 py-2 hover:border-primary focus:bg-primary-light;
+}

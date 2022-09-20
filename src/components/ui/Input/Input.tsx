@@ -1,4 +1,5 @@
 import { FC, InputHTMLAttributes } from 'react';
+import './styles.css';
 
 export const Input: FC<InputHTMLAttributes<HTMLInputElement>> = ({
   type = 'text',
@@ -6,7 +7,7 @@ export const Input: FC<InputHTMLAttributes<HTMLInputElement>> = ({
 }) => {
   return (
     <input
-      className="rounded-xl outline-none w-full border px-4 py-2 hover:border-primary focus:bg-primary-light"
+      className="input"
       type={type}
       {...rest}
     />

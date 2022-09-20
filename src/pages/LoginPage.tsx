@@ -8,8 +8,11 @@ export const LoginPage: FC = () => {
     <div>
       <h1 className="title">Login</h1>
       <Form />
-      <p>
-        Or <Link to={EnumRoutes.REGISTER_ROUTE}>register</Link>
+      <p className="text-[18px]">
+        Or you can{' '}
+        <span className="redirect-link">
+          <Link to={EnumRoutes.REGISTER_ROUTE}>Register</Link>
+        </span>
       </p>
     </div>
   );
