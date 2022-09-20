@@ -5,3 +5,7 @@
 * {
   scroll-behavior: smooth;
 }
+
+.title {
+  @apply text-[32px] font-bold mb-8;
+}

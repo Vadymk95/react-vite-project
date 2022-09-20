@@ -6,7 +6,7 @@ import { EnumRoutes } from '../router';
 export const LoginPage: FC = () => {
   return (
     <div>
-      <h1>Login</h1>
+      <h1 className="title">Login</h1>
       <Form />
       <p>
         Or <Link to={EnumRoutes.REGISTER_ROUTE}>register</Link>

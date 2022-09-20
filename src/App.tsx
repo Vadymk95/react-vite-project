@@ -5,7 +5,7 @@ import { styles } from './styles';
 
 export const App: FC = () => {
   return (
-    <div className="w-full overflow-hidden">
+    <div className="w-full overflow-hidden font-poppins text-primary-text">
       <div className={`${styles.paddingX}`}>
         <div className={`${styles.boxWidth} flex`}>
           <div
@@ -13,7 +13,7 @@ export const App: FC = () => {
           >
             <Sidebar />
           </div>
-          <div className={`${styles.padding} w-full`}>
+          <div className={`${styles.padding} w-full bg-sky-50`}>
             <AppRouter />
           </div>
         </div>

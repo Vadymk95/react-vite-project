@@ -6,7 +6,7 @@ export const Input: FC<InputHTMLAttributes<HTMLInputElement>> = ({
 }) => {
   return (
     <input
-      className="rounded-xl outline-none border px-4 py-2 hover:border-primary focus:bg-primary-light"
+      className="rounded-xl outline-none w-full border px-4 py-2 hover:border-primary focus:bg-primary-light"
       type={type}
       {...rest}
     />
