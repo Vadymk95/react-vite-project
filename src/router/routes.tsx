@@ -14,7 +14,7 @@ interface IRoute {
   element: ReactNode;
 }
 
-export const routes: IRoute[] = [
+export const protectedRoutes: IRoute[] = [
   {
     path: EnumRoutes.DEFAULT_ROUTE,
     element: <Navigate to={EnumRoutes.MAIN_ROUTE} replace />,
@@ -38,5 +38,20 @@ export const routes: IRoute[] = [
   {
     path: EnumRoutes.ERROR_ROUTE,
     element: <ErrorPage />,
+  },
+];
+
+export const publishRoutes: IRoute[] = [
+  {
+    path: EnumRoutes.ERROR_ROUTE,
+    element: <Navigate to={EnumRoutes.LOGIN_ROUTE} replace />,
+  },
+  {
+    path: EnumRoutes.LOGIN_ROUTE,
+    element: <LoginPage />,
+  },
+  {
+    path: EnumRoutes.REGISTER_ROUTE,
+    element: <RegisterPage />,
   },
 ];

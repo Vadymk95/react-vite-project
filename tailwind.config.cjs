@@ -9,6 +9,9 @@ module.exports = {
         'primary-lighter': '#a855f7',
         'primary-light': '#f3e8ff',
         'primary-text': '#312e81',
+
+        danger: '#f43f5e',
+        'danger-lighter': '#fda4af',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],

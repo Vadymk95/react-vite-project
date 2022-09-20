@@ -11,7 +11,7 @@ interface ILink {
 export const Link: FC<ILink> = ({ route, name, sidebarLinks }) => {
   return (
     <li>
-      <NavLink to={route} style={sidebarLinks}>
+      <NavLink className="hover:underline" to={route} style={sidebarLinks}>
         {name}
       </NavLink>
     </li>
