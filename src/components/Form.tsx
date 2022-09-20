@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { Input } from './ui/Input';
+import { Input, Button } from './ui';
 import { useInput } from '../hooks/useInput';
 
 export const Form: FC = () => {
@@ -10,6 +10,7 @@ export const Form: FC = () => {
     <div>
       <Input {...email} type="email" placeholder="Email" />
       <Input {...password} type="password" placeholder="Password" />
+      <Button>Login</Button>
     </div>
   );
 };

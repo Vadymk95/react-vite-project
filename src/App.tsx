@@ -9,7 +9,7 @@ export const App: FC = () => {
       <div className={`${styles.paddingX}`}>
         <div className={`${styles.boxWidth} flex`}>
           <div
-            className={`${styles.paddingY} w-[300px] h-screen text-white pl-8 pr-4 bg-purple-600`}
+            className={`${styles.paddingY} w-[300px] h-screen text-white pl-8 pr-4 bg-primary`}
           >
             <Sidebar />
           </div>
