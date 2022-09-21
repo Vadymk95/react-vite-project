@@ -1,12 +1,17 @@
 import { FC, ButtonHTMLAttributes } from 'react';
 import './styles.css';
 
-export const Button: FC<ButtonHTMLAttributes<HTMLButtonElement>> = ({
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  styles?: string;
+}
+
+export const Button: FC<ButtonProps> = ({
   children,
   onClick,
+  styles
 }) => {
   return (
-    <button onClick={onClick} className="button">
+    <button onClick={onClick} className={`button ${styles}`}>
       {children}
     </button>
   );
