@@ -24,7 +24,10 @@ export const Login: FC = () => {
         password.reset();
         navigate(EnumRoutes.MAIN_ROUTE);
       })
-      .catch(console.error);
+      .catch(e => {
+        console.error(e);
+        navigate(EnumRoutes.REGISTER_ROUTE);
+      });
   };
   return <Form title="Sign In" handleClick={handleLogin} />;
 };

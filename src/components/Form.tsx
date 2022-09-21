@@ -19,7 +19,7 @@ export const Form: FC<FormProps> = ({ title = 'Button', handleClick, isExistUser
   const [isValidEmail, setValidEmail] = useState(true);
   const [isValidPassword, setValidPassword] = useState(true);
   const [isValidRepeatdPassword, setValidRepeatPassword] = useState(true);
-  console.log(isExistUser)
+
   const onClick = () => {
     if (email.value.includes('@gmail.com') && password.value.length > 7) {
       if (currentPage && password.value === repeatPassword.value) handleClick(email, password);

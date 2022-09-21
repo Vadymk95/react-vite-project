@@ -25,13 +25,18 @@ export const Sidebar: FC = () => {
   const handleLogOut = () => dispatch(removeUser());
 
   return (
-    <div className="sidebar relative">
+    <div className="sidebar">
       {isAuth && (
         <>
-          <Button styles="absolute -top-10 text-[12px]" onClick={handleLogOut}>
-            Log Out From {email}
-          </Button>
-          <h2 className="text-[28px] font-bold">Menu</h2>
+          <header className="lg:flex flex-row-reverse justify-between items-center">
+            <Button
+              styles="text-[12px]"
+              onClick={handleLogOut}
+            >
+              Log Out
+            </Button>
+            <h2 className="text-[28px] font-bold">Menu</h2>
+          </header>
           <nav className="sidebar__nav mt-4">
             <ul>
               {links.map((link) => (
