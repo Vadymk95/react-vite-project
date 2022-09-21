@@ -9,11 +9,11 @@ export const App: FC = () => {
       <div className={`${styles.paddingX}`}>
         <div className={`${styles.boxWidth} flex`}>
           <div
-            className={`${styles.paddingY} w-[300px] h-screen text-white pl-8 pr-4 bg-primary`}
+            className={`${styles.paddingY} w-1/5 h-screen text-white pl-8 pr-4 bg-gradient-to-b from-primary`}
           >
             <Sidebar />
           </div>
-          <div className={`${styles.padding} w-full bg-sky-50`}>
+          <div className={`${styles.padding} w-4/5 bg-gradient-to-tr from-sky-50 to-sky-100`}>
             <AppRouter />
           </div>
         </div>

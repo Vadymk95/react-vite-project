@@ -1,5 +1,10 @@
 import { FC } from 'react';
+import { Container } from '../components';
 
 export const ListPage: FC = () => {
-  return <div>ListPage</div>;
+  return (
+    <Container name="List Page">
+      <p>List</p>
+    </Container>
+  );;
 };
